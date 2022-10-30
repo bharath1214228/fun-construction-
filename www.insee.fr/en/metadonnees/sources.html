@@ -1,0 +1,857 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!-- Mirrored from www.insee.fr/en/metadonnees/sources by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 30 Oct 2022 14:00:55 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+
+
+
+
+	
+		
+			<title data-i18n="sources.liste-sources.titre">Présentation des sources | Insee</title>
+		
+		
+		
+	
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="https://www.insee.fr/static/css/application.css">
+<link rel="stylesheet" type="text/css" href="https://www.insee.fr/static/css/featherlight/featherlight.css">
+<link rel="stylesheet" type="text/css" href="https://www.insee.fr/static/css/swiper/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="https://www.insee.fr/static/css/dateTimePicker/jquery.datetimepicker.css"></link>
+<script type="text/javascript">
+	var contextPath="";
+	var langue="en";
+	var numOnglet="2";
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" charset="UTF-8" defer="defer" src="https://www.insee.fr/static/js/svg/graphsvg.js"></script>
+
+<script type="text/javascript" charset="UTF-8" defer="defer" src="https://www.insee.fr/static/js/application-lib.min.js"></script>
+<!--  -->
+<script type="text/javascript" charset="UTF-8" defer="defer" src="https://www.insee.fr/static/js/application.babel.js"></script>
+
+<!--[if lte IE 8]>
+<script type="text/javascript" charset="UTF-8" defer="defer" src="
+
+
+/static/js/polyfills/css3-mediaqueries.min.js
+"></script>
+<![endif]-->
+<script type="text/javascript">
+var inseeConfig = {
+
+	
+};
+</script>
+
+<script type="text/javascript">
+var features = {
+'rmesSource': 'true',
+};
+</script>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+<link rel="shortcut icon" href="https://www.insee.fr/static/img/favicon.ico">
+
+</head>
+<body>
+	<!-- Lightbox -->
+	<span id="isLightbox" class="hide">false</span>
+
+	<span class="controller-param hidden" id="urlAlternative" aria-hidden="true" ></span>
+	<span class="controller-param hidden" id="urlCible" aria-hidden="true" ></span>
+	<span class="controller-param hidden" id="urlCibleAlternative" aria-hidden="true" ></span>
+
+	
+
+
+	<div id="wait" class="wait-off" ><img src="https://www.insee.fr/static/img/preloader.gif" alt="Veuillez-patienter..." /></div>
+	<div id="fond-transparent-body" class="fond-transparent-off"></div>
+	<header class="header"  role="banner">
+		
+
+
+
+
+
+<div id="banniere" class="banniere">
+	<div class="bandeau">
+		<div class="loupe" tabindex="-1">
+			<a href="#" id="afficher-recherche" tabindex="-1">
+				<span class="loupe-span">
+					<br/>
+					<span data-i18n="header.responsive.recherche-loupe" class="style">Recherche</span>
+				</span>
+			</a>
+			<a id="lien-aide-responsive" data-i18n="header.recherche.aide-du-haut-court" href="https://www.insee.fr/en/information/3313008">Aide</a>
+		</div>
+		
+		
+
+
+
+
+
+
+
+
+	
+	
+		<a  href="https://www.insee.fr/en/accueil" id="logo" >
+			<img class="logo" src="https://www.insee.fr/static/img/logo_com_externe_semi_bold.png" height="75px" data-i18n="[alt]header.logo.alt" alt="accueil" />
+			<span class="hidden" id="lien-logo">/static/img/logo_com_externe_semi_bold.png</span>
+			<span class="hidden" id="lien-logo-responsive">/static/img/logo-insee-header.png</span>
+		</a>
+	
+
+		
+		<div class="hamburger">
+			<a href="#" id="afficher-menu" tabindex="-1">
+				<span class="hamburger-menu">
+					<br/>
+					<span data-i18n="header.responsive.menu-hamburger" class="style">Menu</span>
+				</span>
+			</a>
+			
+				
+					<a id="lien-changement-langue-responsive" href="https://www.insee.fr/langue/fr" lang="fr">Français</a>
+				
+				
+			
+		</div>
+	
+		
+		<div id="recherche-header" class="recherche-header recherche">
+			<div id="liens-acces">
+				<ul class="liste-lien-acces">
+					
+						<li class="lien-evitement"><a data-i18n="header.recherche.menu" href="#menu">Menu</a></li>	
+						<li class="lien-evitement"><a data-i18n="header.recherche.contenu" href="#contenu">Contenu</a></li>
+						<li><a href="https://blog.insee.fr/" target="_blank" rel="noopener noreferrer">Blog</a></li>
+						<li><a data-i18n="header.recherche.espace-presse" href="https://www.insee.fr/en/information/2107814">Espace presse</a></li>
+						<li><a data-i18n="header.recherche.aide-du-haut" href="https://www.insee.fr/en/information/3313008">Aide</a></li>
+						
+ 						
+							
+								<li><a id="lien-changement-langue" href="https://www.insee.fr/langue/fr" lang="fr">Français</a></li>
+							
+							
+						
+				</ul>
+			</div>
+			<div id="searchbar-header" class="searchbar-header" role="search">
+				<span id="search-waiting" class="waiting-off"><img alt="Veuillez-patienter..." src="https://www.insee.fr/static/img/preloader.gif"></span>
+				<input data-i18n="[placeholder]header.recherche.barre-recherche-placeholder;[title]header.recherche.barre-recherche-title" type="search" class="ui-autocomplete-input"
+					id="barre-recherche" role="textbox" autocomplete="off" tabindex="0" title="Rechercher sur le site" placeholder="Rechercher sur le site" />
+				<button data-i18n="[title]header.recherche.loupe-title" id="bouton-recherche" class="searchbar-icon" tabindex="0" role="button" title="rechercher"></button>
+				<span id="start-terms" class="hidden"></span>
+			</div>
+		</div>
+	
+</div>
+	<!-- Attention : les commentaires en fin de ligne ont un rôle important ! -->
+	<nav id="menu" role="navigation" aria-hidden="false" >
+		<ul class="menu">
+			<li><a class="lien maison" href="https://www.insee.fr/en/accueil" title="accueil" ></a></li><!--
+			--><li><a data-i18n="[html]menu.statistiques.titre" class="lien" href="https://www.insee.fr/en/statistiques" >Statistiques et études</a>
+				<div class="menu-deroulant">
+					<div data-i18n="[html]menu.statistiques.en-tete" class="menu-deroulant-en-tete">
+						Cherchez vos statistiques par&hellip;
+					</div>
+					<ul>
+						<li>
+							<a class="deroulement" href="#"></a><a data-i18n="menu.statistiques.themes" class="lien titre-categorie" href="https://www.insee.fr/en/statistiques?idfacette=1">Thèmes</a>
+							<ul>
+								<li><a data-i18n="menu.statistiques.economie" class="lien" href="https://www.insee.fr/en/statistiques?theme=27">Économie - conjoncture - comptes nationaux</a></li>
+								<li><a data-i18n="menu.statistiques.demographie" class="lien" href="https://www.insee.fr/en/statistiques?theme=0">Démographie</a></li>
+								<li><a data-i18n="menu.statistiques.entreprises" class="lien" href="https://www.insee.fr/en/statistiques?theme=37">Entreprises</a></li>
+								<li><a data-i18n="[html]menu.statistiques.plus-de-themes" class="lien plusDe" href="https://www.insee.fr/en/statistiques?idfacette=1">Plus de thèmes&hellip;</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="deroulement" href="#"></a><a data-i18n="menu.statistiques.niveau-geographique" class="lien titre-categorie" href="https://www.insee.fr/en/statistiques?idfacette=3">Niveaux géographiques</a>
+							<ul>
+								<li><a class="lien" href="https://www.insee.fr/en/statistiques?debut=0&amp;geo=FRANCE-1&amp;idfacette=3">France</a></li>
+								<li><a data-i18n="menu.statistiques.comparaisons-reg-dep" class="lien" href="https://www.insee.fr/en/statistiques?debut=0&amp;geo=COMPRD-1&amp;idfacette=3">Toutes les régions ou tous les départements</a></li>
+								<li><a data-i18n="menu.statistiques.toutes-communes" class="lien" href="https://www.insee.fr/en/statistiques?debut=0&amp;geo=TOUTES_COMMUNE-1">Toutes les communes</a></li>
+								<li><a data-i18n="[html]menu.statistiques.plus-de-niveau-geographique" class="lien plusDe" href="https://www.insee.fr/en/statistiques?idfacette=3">Plus de niveaux géographiques&hellip;</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="deroulement" href="#"></a><a data-i18n="menu.statistiques.categorie-produit" class="lien titre-categorie" href="https://www.insee.fr/en/statistiques?idfacette=4">Catégories</a>
+							<ul>
+								<li><a data-i18n="menu.statistiques.donnees" class="lien" href="https://www.insee.fr/en/statistiques?categorie=1">Données</a></li>
+								<li><a data-i18n="menu.statistiques.publications" class="lien" href="https://www.insee.fr/en/statistiques?categorie=2">Publications</a></li>
+								<li><a data-i18n="[html]menu.statistiques.plus-de-categories" class="lien plusDe" href="https://www.insee.fr/en/statistiques?idfacette=4">Plus de catégories&hellip;</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="deroulement" href="#"></a><a data-i18n="menu.statistiques.collections" class="lien titre-categorie" href="https://www.insee.fr/en/statistiques?idfacette=5">Collections</a>
+							<ul>
+								<li><a class="lien" href="https://www.insee.fr/en/statistiques?collection=116">Insee Première</a></li>
+								<li><a class="lien" href="https://www.insee.fr/en/statistiques?collection=119">Notes et points de conjoncture</a></li>
+								<li><a data-i18n="[html]menu.statistiques.plus-de-collections" class="lien plusDe" href="https://www.insee.fr/en/statistiques?idfacette=5">Plus de collections&hellip;</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</li><!--
+			--><li><a class="deroulement" href="#"></a><a class="lien" href="https://www.insee.fr/en/information/2107769">Definitions, methods and quality</a><div class="menu-deroulant"><ul><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2565539">Definitions</a><ul><li><a class="lien" href="https://www.insee.fr/en/metadonnees/definitions">Definitions</a></li></ul></li><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2526481">Data sources and indicators</a><ul><li><a class="lien" href="https://www.insee.fr/en/metadonnees/sources">List of data sources</a></li><li><a class="lien" href="https://www.insee.fr/en/metadonnees/indicateurs">List of indicators</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2517226">Documentation on census results</a></li></ul></li><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/4252443">Quality in the Official Statistical Service (SSP)</a><ul><li><a class="lien" href="https://www.insee.fr/en/information/4249987">The Reference Framework</a></li><li><a class="lien" href="https://www.insee.fr/en/information/5388742">The Third European Peer Review 2021</a></li><li><a class="lien" href="https://www.insee.fr/en/information/4250036">Governance</a></li><li><a class="lien" href="https://www.insee.fr/en/information/4250540">Skills</a></li><li><a class="lien" href="https://www.insee.fr/en/information/4250661">Quality Management Actions and Initiatives as part of a Process-Oriented Approach</a></li><li><a class="lien" href="https://www.insee.fr/en/information/4251599">European Commitments</a></li><li><a class="lien" href="https://www.insee.fr/en/information/4251104">Users’ Needs</a></li></ul></li><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107765">Classification</a><ul><li><a class="lien" href="https://www.insee.fr/en/metadonnees/nafr2/section/A">French classification of activities - NAF Rev. 2</a></li><li><a class="lien" href="https://www.insee.fr/en/metadonnees/cpfr21/section/A">French classification of products - CPF Rev. 2.1</a></li></ul></li><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/5398380">Models, Methods and Statistical Tools</a><ul><li><a class="lien" href="https://www.insee.fr/en/information/5398357">Statistical Methodology</a></li></ul></li><li><a class="lien titre-categorie" href="https://www.insee.fr/en/information/4195037">Courrier des statistiques</a><ul></ul></li></ul></div></li><li><a class="deroulement" href="#"></a><a class="lien" href="https://www.insee.fr/en/information/2107752">Services</a><div class="menu-deroulant"><ul><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107732">Review maintenance payments, rents, leases or a contract</a><ul><li><a class="lien" href="https://www.insee.fr/en/information/2489482">Review housing rent</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2489869">Review a commercial or professional lease</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2491441">Indexation of contracts</a></li></ul></li><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2512785">Retrieve indices and time series (BDM)</a><ul><li><a class="lien" href="https://www.insee.fr/en/information/2868059">Search for indices and time series</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2868055">Using the SDMX service web</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2868052">Correspondence tables</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2886952">History of news</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2852056">Technical changes in the web service SDMX</a></li></ul></li><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107734">Register or identify a company</a><ul><li><a class="lien" href="https://www.insee.fr/en/information/2107726">Company situation tools</a></li></ul></li><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2563034">Videos &amp; Educational tools</a><ul><li><a class="lien" href="https://www.insee.fr/en/information/2563032">INSEE in brief</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2903127">Videos</a></li></ul></li><li><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107749">Respond to an INSEE survey</a><ul></ul></li><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107747">Consult publication calendars</a><ul><li><a class="lien" href="https://www.insee.fr/en/information/2107811">Publication calendars</a></li></ul></li><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107743">Contributing to the Index database of natural persons (BRPP)</a><ul><li><a class="lien" href="https://www.insee.fr/en/information/2493967">Registry office data</a></li><li><a class="lien" href="https://www.insee.fr/en/information/4489573">The Single Electoral Register</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2494151">The computerisation of data exchange</a></li></ul></li><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/3288629">Alain Desrosières Insee library</a><ul><li><a class="lien" href="https://www.insee.fr/en/information/3288575">Documentary portal and open access catalogue</a></li><li><a class="lien" href="https://www.insee.fr/en/information/3288548">The Digital Library of Official Statistics</a></li><li><a class="lien" href="https://www.insee.fr/en/information/3288461">Contact the library</a></li></ul></li><li><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107745">Order a service</a><ul></ul></li><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107739">Follow us</a><ul><li><a class="lien" href="https://www.insee.fr/en/information/3711699">INSEE on social networks</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2107837">Publication alerts</a></li></ul></li><li><a class="lien titre-categorie" href="https://www.insee.fr/en/information/3313008">Contact us</a><ul></ul></li><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107814">Press</a><ul><li><a class="lien" href="https://www.insee.fr/en/information/2499106">Regional press officers</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2647680">Press releases</a></li></ul></li></ul></div></li><li><a class="deroulement" href="#"></a><a class="lien" href="https://www.insee.fr/en/information/2107711">INSEE and official statistics</a><div class="menu-deroulant"><ul><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107702">INSEE</a><ul><li><a class="lien" href="https://www.insee.fr/en/information/2381925">Getting to know INSEE</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2381922">Working at INSEE</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2381920">Seminars and conferences</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2381918">Brief history</a></li><li><a class="lien" href="https://www.insee.fr/en/information/4195175">Activity Reports</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2410087">Satisfaction surveys</a></li></ul></li><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107704">INSEE's activities</a><ul><li><a class="lien" href="https://www.insee.fr/en/information/2384705">Producing short-term diagnoses</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2384796">Providing details about the productive system</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2384815">Observation of the society</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2384952">Conducting the population census</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2384677">Describing and analysing regions and territories</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2388700">Managing registers : BRPP and Sirene</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2388407">Disseminating its statistics and studies</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2385705">Improving its methods and assessing quality</a></li><li><a class="lien" href="https://www.insee.fr/en/information/4301982">Contributing to the development of European and international statistics</a></li></ul></li><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107706">Official Statistics</a><ul><li><a class="lien" href="https://www.insee.fr/en/information/2398930">Legislative and institutional framework</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2386424">Official Statistical System</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2388575">Statistical confidentiality</a></li><li><a class="lien" href="https://www.insee.fr/en/information/4196120">Personal data protection</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2388844">Access to data</a></li><li><a class="lien" href="https://www.insee.fr/en/information/5232639">Access to administrative documents</a></li></ul></li><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107708">The development of European statistics</a><ul><li><a class="lien" href="https://www.insee.fr/en/information/4304373">Producers of European statistics in France</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2410240">The legal basis of European statistical governance</a></li><li><a class="lien" href="https://www.insee.fr/en/information/4300318">The framework regulations and sectoral regulations</a></li></ul></li><li><a class="lien titre-categorie" href="https://www.insee.fr/en/information/5232639">Access to administrative documents</a><ul></ul></li></ul></div></li>
+		</ul>
+	</nav>
+</div>
+<div class="clear"></div>
+	</header>	
+    
+	<main id="contenu" class="main" role="main">
+		<nav class="breadcrum">
+   <div class="container">
+      <ol class="fil-ariane">
+         <li><a data-i18n="breadcrum.accueil" href="https://www.insee.fr/en/accueil">Accueil</a></li>
+         <li><a href="https://www.insee.fr/en/information/2107769">Definitions, methods and&nbsp;quality</a></li>
+         <li><a href="https://www.insee.fr/en/information/2526481">Data sources and indicators</a></li>
+         <li data-i18n="sources.liste-sources.titre">Présentation des sources</li>
+      </ol>
+   </div>
+</nav>
+<section>
+   <div class="titre-page publication   ">
+      <div class="titre">
+         <h1 class="titre-principal                                      " data-i18n="sources.liste-sources.titre"><span class="titre-titre">Présentation des sources</span></h1>
+         <p class="auteurs hidden-template-impression"></p>
+         <div class="chapeau"></div>
+      </div>
+      <div class="details hidden-template-impression">
+         <div>
+            <div class="categorie">Sources</div>
+            <div class="famille-numero"></div>
+            <div class="date-diffusion hidden-impression-information-rapide"><span id="libelle-details" class="hidden-template-impression"><span data-i18n="[html]produit.bandeau-bleu.paru-le">Paru le : </span></span><span id="libelle-details" class="impression-seulement hidden-impression-information-rapide"><span data-i18n="[html]produit.bandeau-bleu.paru-le-impression">Paru le </span></span>30/10/2022
+            </div>
+            <div class="lien-details"><a data-i18n="produit.bandeau-bleu.imprimer" href="#" class="bouton-imprimante">Imprimer</a></div>
+         </div>
+         <div class="donnees-telechargeables"></div>
+      </div>
+      <div class="auteurs hidden-impression-information-rapide impression-seulement"></div>
+      <div class="date-diffusion hidden-impression-information-rapide impression-seulement"></div>
+   </div>
+   <div class="contenu   " id="contenu">
+      <div id="partage-reseaux-sociaux">
+         <div class="contenu-reseaux-sociaux">
+            <div class="cercle-twitter"><a data-i18n="[title]reseaux-sociaux.publication.lien-twitter" href="https://twitter.com/intent/tweet?url=https://www.insee.fr/en/metadonnees//sources&amp;text=Pr%C3%A9sentation%20des%20sources" title="Twitter" target="_blank"><span class="icone-twitter"><span data-i18n="reseaux-sociaux.publication.lien-twitter" class="hidden-accessibilite"></span></span></a></div>
+            <div class="cercle-linkedin"><a data-i18n="[title]reseaux-sociaux.publication.lien-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.insee.fr/en/metadonnees//sources&amp;title=Pr%C3%A9sentation%20des%20sources" class="btn btn-link" title="LinkedIn" target="_blank"><span class="icone-linkedin"><span data-i18n="reseaux-sociaux.publication.lien-linkedin" class="hidden-accessibilite"></span></span></a></div>
+         </div>
+      </div>
+      <div class="contenu">
+         <div id="consulter" class="courant publication" tabindex="0">
+            <div class="corps-publication">
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-1">Access to finance for the small and medium-sized enterprises</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1160">Access to finance for the Small and Medium-sized enterprises employing at least 10
+                        persons</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-3">Activity, production and turnover</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1284">Computation of activity and turnover indices / ICA</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1006">Monthly branch surveys</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1222">Monthly survey of large-scale food retail activities / Emagsa</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1044">Survey on the impact of the health crisis on the businesses organisation and activity</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-5">Adults' training</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s2088">Lifelong Learning Survey / FLV</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1240">Training and vocational skills survey / FQP</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-7">Annual Business Statistics</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1193">Annual production survey / EAP</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1269">Annual sectoral survey / ESA</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s2055">Defence Industries Businesses Survey</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1188">Elaboration of annual statistics of companies / Esane</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1256">Retail Outlets</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1254">Survey of trade margins</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-9">Associations</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1326">Survey on associations</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-11">Business start-ups</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1271">New enterprises information system / Sine</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-13">Companies and sustainable development</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1214">Annual survey on industrial energy consumption / EACEI</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1227">Companies and sustainable development / EnDD</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1258">Survey of the production of non-hazardous waste by industrial etablishments</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1213">Survey on Energy consumption and antipollution investment in small establishments
+                        with fewer than 20 employees / ECEI-PE</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1232">Survey on environmental protection studies and investments / Antipol</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s2030">Survey on non-hazardous waste generation in services / Waste - services</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1219">Survey on non-hazardous waste in wholesale and retail trade</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1215">Survey on services energy consumption / ECET</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1040">Survey on waste generation and management in the tertiary sector in Hauts-de-France</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-15">Consumer prices</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1007">Price collection index computation / CPI</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1252">Quarterly outlook survey on the rents of the social sector</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1253">Rents and Charges Survey</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1200">Spatial comparison survey on consumer price levels within France</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1270">Telecommunications Services Survey</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-17">Delineation of the groups</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1038">Financial links, the French repository of groups</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1259">Register of enterprises with majority control by the state / Recme</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-19">Demographic projections</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1317">Household forecasts</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1318">Labour force projections</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1316">Population projections</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-21">Economic outlook surveys</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1204">Bi-monthly tendency survey in wholesaling</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1212">Half-yearly survey of the cash flow situation in industry</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1208">Monthly consumer confidence survey / CAMME</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1205">Monthly tendency survey in industry</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1210">Monthly tendency survey in services</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1206">Monthly tendency survey in the building industry</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1203">Monthly tendency survey in the retail trade and in the trade and repair of motor vehicles</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1211">Quarterly tendecy survey on public works</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1209">Quarterly tendency survey in real estate development</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1207">Quarterly tendency survey on investment in industry</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1202">Quaterly tendency survey in the building trades</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-23">Electoral participation</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1255">Survey of electoral participation</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-25">Employers, employees and self-employed</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1998">All employees databases</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1047">All employees panel</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1999">Census of Military State Agents of the Armed Forces / CSA_M</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1050">Census of State Agents Gendarmes / CSA_G</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1167">Data from URSSAF, MSA and SIASP on employment and the total wage bill, used by INSEE
+                        / Epure</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1042">Pay and salaried employment localized file / Flores</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1322">System for information on civil servants</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1173">System for information on Private Individuals' Employees / PE</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-27">Employment estimates</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1283">Compilation of Employment Estimates</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-29">Employment survey</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1223">Labour force survey / LFS</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1041">Labour force survey Mayotte / LFS Mayotte</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-31">Enterprises networks</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1216">Survey on networks scope in retail and services</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-33">Facilities census</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1161">Permanent database of facilities / BPE</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-35">Family relationships</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1233">Survey on family and housing</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1260">Survey on family and intergenerational relationships / Erfi</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-37">Food aid</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s2016">Food aid users survey</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s2018">Quantitative monitoring of food aid</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s2017">Survey on the actvity of food aid centers</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-39">Globalisation</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1190">European survey on activities of subsidiaries under national control implanted in
+                        foreign countries / Outward FATS</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1371">Global value chains of SME / GVC-SME</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1011">Survey of intra-group international trade / EIIG</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1195">Survey on "Global value chains" / CAM</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s2058">Survey on outsourcing in companies</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1201">Survey on the competitiveness of 'Business France' and french companies in the global
+                        marketplace</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-41">Health</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1264">Health Survey</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1265">Heath and professional career survey / HPC</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-43">Health and disability</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1245">Health and disability survey - households section / HSM</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1244">Health and disability survey - institutions section / HSI</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-45">Homeless people</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1002">Survey about homeless</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-47">Household budget</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1194">Household budget survey / BDF</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-49">Household wealth</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1005">Household Wealth Survey</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-51">Housing</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1350">Annual estimates of the housing stock / EAPL</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1028">Elaboration of housing price indices</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1004">Housing survey</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-53">Information and Communication Technologies</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1275">Household annual survey on information and communication technologies / Household
+                        ICT</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1273">Survey on information and communication technologies in business / Business ICT</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1274">Survey on usage of information and communication technologies and e-Commerce in enterprises
+                        with less than 10 persons employed / ICT-VSE</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-55">Innovation</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1001">Innovation survey / CIS</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-57">Intangible management in companies</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1012">Means and methods of managing intangible assets / IMMATERIAL 2004</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1016">Survey of use of services by industry / Services</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-59">Living environment and security</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1278">Victimisation survey - living environment and security / CVS</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-61">Localized incomes</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1172">Localised disposable income system / Filosofi</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-63">Longitudinal Demographic Data</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1018">Adult Mortality - Longitudinal Sample</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1166">Permanent Demographic Sample / EDP</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-65">National accounts</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1217">Annual financial lease survey</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1030">Annual national accounts (2014 Base)</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1035">Business Purchasing Survey / Purchasing</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1036">Household consumption (2014 base)</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1185">Quarterly national accounts</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1048">Trade accounts (2014 base)</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-67">Population accounting</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1169">Population estimates</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-69">Population census</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1320">Communities census</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1321">Population census / RP</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-71">Prices and production costs</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1032">Computation of BT/TP and production cost indexes in construction</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1027">Computation of price indicators in the agricultural sector</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1353">Survey on observation of prices in industry and services / Opise</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1025">Survey on the cost price of new housing</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-73">Professional integration</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1226">Survey on entry into adult life / EVA</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-75">Quality of life</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1348">Survey on quality of life</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-77">Regional accounts</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1315">Regional gross domestic products and value added</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-79">Regional industrial sectors</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1045">Enquête Impact des Activités Spatiales en Guyane / IAS</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1235">Survey of automotive industry in Nord-Pas-de-Calais region</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1234">Survey on aerospace and space sector of the large Southwest region</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-81">Register of enterprises</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1020">Business register identification system / Sirene</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1043">Defence Supplier Companies Directory / DSCD</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1346">Register of enterprises and establishments / REE</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1024">Statistical business register / Sirus</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-83">Register of natural persons</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1170">Civil register</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1046">Single electoral register / SER</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-85">Rent reference indices</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1029">Computation of rent reference indices</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-87">Resources and living conditions</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1225">National survey on the resources of young adults</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1220">Statistics on income and living conditions / EU-SILC&nbsp;</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-89">See also</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1033">Information system on housing and premises / Sitadel2</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1034">Other indexes</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-91">Seniors' living conditions</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1279">Everyday life and health survey / VQS</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1266">Survey of Health, Ageing and Retirement in Europe since 2004 / Share</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1178">Survey on capabilities, help and resources for seniors living in households / Care
+                        Households</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-93">Skills</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1257">Programme for the International Assessment of Adult Competencies / PIAAC</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-95">Tax and social data on housing and individuals</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1019">Housing and individual demographic files / Fidéli</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-97">Tax and social income</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1231">Tax and social incomes survey / ERFS</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-99">Time use</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1224">Time use survey / EDT</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-101">Tourism</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s2078">Monitoring tourist demand</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1039">Monthly attendance survey in collective tourist accommodation / Survey of attendance
+                        in tourist accommodation</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1049">Survey of visits to places of remembrance / SARP</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-103">Tourist flows in French overseas departments</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1237">Tourist flows in French Guyana (survey with travelers fom the airport of Cayenne-Rochambeau)</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1236">Tourist flows in Guadeloupe Island (survey with travelers from the airport of Pôle
+                        Caraïbes)</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1238">Tourist flows in Mayotte Island (survey with travelers from the airport of Dzaoudzi)</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1239">Tourist flows in Reunion Island (survey with travelers from this airports of Roland
+                        Garros and Saint-Pierre Pierrefonds)</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-105">Trajectories and origins</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1246">Life story survey / HDV</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1031">Migration, family, ageing survey / MVF</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1003">Trajectories and origins / TeO</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-107">Travel</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1277">National transport and travel survey / ENTD</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-109">Wages, labour cost</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1221">Labour cost and structure of earnings annual survey / Ecmoss</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1189">Labour force activity and employment conditions surveys / Acemo</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1037">Self-employed database</a></li>
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1263">Survey on government employees / FPE</a></li>
+               </ul>
+               <h2 class="bloc  intertitre-impression " id="titre-bloc-111">Workforce movement</h2>
+               <ul class="bloc liste">
+                  <li class="item"><a class="renvoi" data-i18n="" href="https://www.insee.fr/en/metadonnees/source/serie/s1165">Monthly workforce movement report / DMMO</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<section></section>
+	</main>
+	<footer role="contentinfo">
+		
+
+
+
+
+
+
+<div class="footer-mobile">
+	<a id="afficher-menu-footer-mobile">Menu</a>
+</div>
+<div class="footer">
+	<div class="container-bloc-1">
+		<div class="bloc-1" role="navigation">
+			
+			<div class="abonnement">
+				<h2 class="titre-footer" data-i18n="footer.abonnez-vous">Abonnez-vous</h2>
+				<div class="contenu-abonnement">
+					<div class="lettre"></div>
+					<a href="https://www.insee.fr/en/information/2107837" class="lien-footer avis-parution" data-i18n="footer.avis-parution">Avis de parution</a>
+				</div>
+			</div>
+			
+			<div class="reseaux-sociaux">
+				<h2 class="titre-footer" data-i18n="footer.reseaux-sociaux">Nous suivre</h2>
+				<div class="contenu-reseaux-sociaux">
+					<div class="cercle-twitter">
+						
+							
+								<a href="https://twitter.com/InseeFr_News" data-i18n="[title]reseaux-sociaux.footer.lien-twitter" title="Twitter"><span class="icone-twitter"><span data-i18n="reseaux-sociaux.footer.lien-twitter" class="hidden-accessibilite"></span></span></a>
+							
+							
+						
+					</div>
+					<div class="cercle-linkedin">
+						<a href="https://www.linkedin.com/company/insee" data-i18n="[title]reseaux-sociaux.footer.lien-linkedin" title="LinkedIn"><span class="icone-linkedin"><span data-i18n="reseaux-sociaux.footer.lien-linkedin" class="hidden-accessibilite"></span></span></a>
+					</div>
+					<div class="cercle-youtube">
+						<a href="https://www.youtube.com/channel/UChCCvJTbZEYsCXyfu27eQ6g" data-i18n="[title]reseaux-sociaux.footer.lien-youtube" title="Youtube"><span class="icone-youtube"><span data-i18n="reseaux-sociaux.footer.lien-youtube" class="hidden-accessibilite"></span></span></a>
+					</div>
+					<div class="cercle-dailymotion">
+						<a href="https://www.dailymotion.com/InseeFr" data-i18n="[title]reseaux-sociaux.footer.lien-dailymotion" title="Dailymotion"><span class="icone-dailymotion"><span data-i18n="reseaux-sociaux.footer.lien-dailymotion" class="hidden-accessibilite"></span></span></a>
+					</div>
+					<div class="cercle-blog">
+						<a href="https://blog.insee.fr/" data-i18n="[title]reseaux-sociaux.footer.lien-blog" title="Blog"><span class="icone-blog"><span data-i18n="reseaux-sociaux.footer.lien-blog" class="hidden-accessibilite"></span></span></a>
+					</div>
+					<div class="cercle-rss">
+						<a href="https://www.insee.fr/en/information/2414678" data-i18n="[title]reseaux-sociaux.footer.lien-rss" title="Rss"><span class="icone-rss"><span data-i18n="reseaux-sociaux.footer.lien-rss" class="hidden-accessibilite"></span></span></a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="contact-aide">
+				<h2 class="titre-footer" data-i18n="footer.contact">Contact</h2>
+				<div class="contenu-contact-aide">
+					
+						
+							<a href="https://www.insee.fr/en/information/2414818" class="lien-footer" data-i18n="footer.nous-contacter">Nous contacter</a>
+						
+						
+					
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<div class="container-bloc-2">
+		<div class="bloc-2"><ul>
+   <div class="colonne-1">
+      <li class="liste-niveau-1">
+         <div class="titre-liste-niveau-1">
+            <a class="lien" href="https://www.insee.fr/en/statistiques" data-i18n="menu.statistiques.titre">Statistiques et études</a>
+         </div>
+      </li>
+      <li class="liste-niveau-1">
+         <div class="titre-liste-niveau-1">
+            <a class="lien" href="https://www.insee.fr/en/information/2107769">Definitions, methods and quality</a>
+         </div>
+         <ul>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2565539">Definitions</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2526481">Data sources and indicators</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/4252443">Quality in the Official Statistical Service (SSP)</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107765">Classification</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/5398380">Models, Methods and Statistical Tools</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/4195037">Courrier des statistiques</a>
+               </div>
+            </li>
+         </ul>
+      </li>
+   </div>
+   <div class="colonne-2">
+      <li class="liste-niveau-1">
+         <div class="titre-liste-niveau-1">
+            <a class="lien" href="https://www.insee.fr/en/information/2107752">Services</a>
+         </div>
+         <ul>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107732">Review maintenance payments, rents, leases or a contract</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2512785">Retrieve indices and time series (BDM)</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107734">Register or identify a company</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2563034">Videos &amp; Educational tools</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107749">Respond to an INSEE survey</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107747">Consult publication calendars</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107743">Contributing to the Index database of natural persons (BRPP)</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/3288629">Alain Desrosières Insee library</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107745">Order a service</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107739">Follow us</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/3313008">Contact us</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107814">Press</a>
+               </div>
+            </li>
+         </ul>
+      </li>
+      <li class="liste-niveau-1">
+         <div class="titre-liste-niveau-1">
+            <a class="lien" href="https://www.insee.fr/en/information/2107711">INSEE and official statistics</a>
+         </div>
+         <ul>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107702">INSEE</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107704">INSEE's activities</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107706">Official Statistics</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107708">The development of European statistics</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/5232639">Access to administrative documents</a>
+               </div>
+            </li>
+         </ul>
+      </li>
+   </div>
+</ul></div>
+	</div>
+	<div class="container-bloc-3" role="navigation">
+		<div class="bloc-3">
+			<ul class="images-footer"><li class="image-footer"><a class="lien-footer-image" href="http://ec.europa.eu/eurostat/web/european-statistical-system/overview?locale=en"><img src="https://www.insee.fr/en/image/footer/sse_en.png" alt="European Statistical System" title="Eurostat (statistical office of the European Union)"/></a></li><li class="image-footer"><a class="lien-footer-image" href="https://www.casd.eu/en/"><img src="https://www.insee.fr/en/image/footer/logo-casd-bas-page.png" alt="CASD" title="Secure access services for confidential data"/></a></li></ul>
+		</div>
+	</div>
+	<div class="container-bloc-4" role="navigation">
+		<div class="bloc-4">
+			<ul class="liens-footer"><li class="lien-footer mentions"><a href="https://www.insee.fr/en/information/2409130">Legal notice</a></li><li class="lien-footer cond-use-data"><a href="https://www.insee.fr/en/information/2409139">Conditions of redistribution</a></li><li class="lien-footer accessibilite"><a href="https://www.insee.fr/en/information/2415363">Accessibility : partially available</a></li><li class="lien-footer "><a href="https://www.insee.fr/en/plan-du-site/">Site map</a></li></ul>
+		</div>
+	</div>
+</div>
+<a href="#" class="sticky-top"><span data-i18n="footer.sticky-top.texte" class="sticky-text">Haut de page</span></a>
+	</footer>
+	
+	
+
+</body>
+
+<!-- Mirrored from www.insee.fr/en/metadonnees/sources by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 30 Oct 2022 14:00:55 GMT -->
+</html>
+

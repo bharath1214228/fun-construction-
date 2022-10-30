@@ -1,0 +1,768 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!-- Mirrored from www.insee.fr/en/information/2852056 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 30 Oct 2022 14:00:56 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+
+
+
+
+	
+		
+		
+		
+			<title>Technical changes in the web service SDMX | Insee</title>
+		
+	
+
+
+
+
+
+
+		
+		
+		
+			<meta name="description" content="Since October 4, 2017, you can access for some series, the different versions published since June 19, 2017. This new functionnality keeps accessible all the values ​​taken by these series (" />
+		
+	
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="https://www.insee.fr/static/css/application.css">
+<link rel="stylesheet" type="text/css" href="https://www.insee.fr/static/css/featherlight/featherlight.css">
+<link rel="stylesheet" type="text/css" href="https://www.insee.fr/static/css/swiper/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="https://www.insee.fr/static/css/dateTimePicker/jquery.datetimepicker.css"></link>
+<script type="text/javascript">
+	var contextPath="";
+	var langue="en";
+	var numOnglet="3";
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" charset="UTF-8" defer="defer" src="https://www.insee.fr/static/js/svg/graphsvg.js"></script>
+
+<script type="text/javascript" charset="UTF-8" defer="defer" src="https://www.insee.fr/static/js/application-lib.min.js"></script>
+<!--  -->
+<script type="text/javascript" charset="UTF-8" defer="defer" src="https://www.insee.fr/static/js/application.babel.js"></script>
+
+<!--[if lte IE 8]>
+<script type="text/javascript" charset="UTF-8" defer="defer" src="
+
+
+/static/js/polyfills/css3-mediaqueries.min.js
+"></script>
+<![endif]-->
+<script type="text/javascript">
+var inseeConfig = {
+
+	
+};
+</script>
+
+<script type="text/javascript">
+var features = {
+'rmesSource': 'true',
+};
+</script>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+<link rel="shortcut icon" href="https://www.insee.fr/static/img/favicon.ico">
+
+</head>
+<body>
+	<!-- Lightbox -->
+	<span id="isLightbox" class="hide">false</span>
+
+	<span class="controller-param hidden" id="urlAlternative" aria-hidden="true" ></span>
+	<span class="controller-param hidden" id="urlCible" aria-hidden="true" ></span>
+	<span class="controller-param hidden" id="urlCibleAlternative" aria-hidden="true" ></span>
+
+	
+
+
+	<div id="wait" class="wait-off" ><img src="https://www.insee.fr/static/img/preloader.gif" alt="Veuillez-patienter..." /></div>
+	<div id="fond-transparent-body" class="fond-transparent-off"></div>
+	<header class="header"  role="banner">
+		
+
+
+
+
+
+<div id="banniere" class="banniere">
+	<div class="bandeau">
+		<div class="loupe" tabindex="-1">
+			<a href="#" id="afficher-recherche" tabindex="-1">
+				<span class="loupe-span">
+					<br/>
+					<span data-i18n="header.responsive.recherche-loupe" class="style">Recherche</span>
+				</span>
+			</a>
+			<a id="lien-aide-responsive" data-i18n="header.recherche.aide-du-haut-court" href="https://www.insee.fr/en/information/3313008">Aide</a>
+		</div>
+		
+		
+
+
+
+
+
+
+
+
+	
+	
+		<a  href="https://www.insee.fr/en/accueil" id="logo" >
+			<img class="logo" src="https://www.insee.fr/static/img/logo_com_externe_semi_bold.png" height="75px" data-i18n="[alt]header.logo.alt" alt="accueil" />
+			<span class="hidden" id="lien-logo">/static/img/logo_com_externe_semi_bold.png</span>
+			<span class="hidden" id="lien-logo-responsive">/static/img/logo-insee-header.png</span>
+		</a>
+	
+
+		
+		<div class="hamburger">
+			<a href="#" id="afficher-menu" tabindex="-1">
+				<span class="hamburger-menu">
+					<br/>
+					<span data-i18n="header.responsive.menu-hamburger" class="style">Menu</span>
+				</span>
+			</a>
+			
+				
+					<a id="lien-changement-langue-responsive" href="https://www.insee.fr/langue/fr" lang="fr">Français</a>
+				
+				
+			
+		</div>
+	
+		
+		<div id="recherche-header" class="recherche-header recherche">
+			<div id="liens-acces">
+				<ul class="liste-lien-acces">
+					
+						<li class="lien-evitement"><a data-i18n="header.recherche.menu" href="#menu">Menu</a></li>	
+						<li class="lien-evitement"><a data-i18n="header.recherche.contenu" href="#contenu">Contenu</a></li>
+						<li><a href="https://blog.insee.fr/" target="_blank" rel="noopener noreferrer">Blog</a></li>
+						<li><a data-i18n="header.recherche.espace-presse" href="https://www.insee.fr/en/information/2107814">Espace presse</a></li>
+						<li><a data-i18n="header.recherche.aide-du-haut" href="https://www.insee.fr/en/information/3313008">Aide</a></li>
+						
+ 						
+							
+								<li><a id="lien-changement-langue" href="https://www.insee.fr/langue/fr" lang="fr">Français</a></li>
+							
+							
+						
+				</ul>
+			</div>
+			<div id="searchbar-header" class="searchbar-header" role="search">
+				<span id="search-waiting" class="waiting-off"><img alt="Veuillez-patienter..." src="https://www.insee.fr/static/img/preloader.gif"></span>
+				<input data-i18n="[placeholder]header.recherche.barre-recherche-placeholder;[title]header.recherche.barre-recherche-title" type="search" class="ui-autocomplete-input"
+					id="barre-recherche" role="textbox" autocomplete="off" tabindex="0" title="Rechercher sur le site" placeholder="Rechercher sur le site" />
+				<button data-i18n="[title]header.recherche.loupe-title" id="bouton-recherche" class="searchbar-icon" tabindex="0" role="button" title="rechercher"></button>
+				<span id="start-terms" class="hidden"></span>
+			</div>
+		</div>
+	
+</div>
+	<!-- Attention : les commentaires en fin de ligne ont un rôle important ! -->
+	<nav id="menu" role="navigation" aria-hidden="false" >
+		<ul class="menu">
+			<li><a class="lien maison" href="https://www.insee.fr/en/accueil" title="accueil" ></a></li><!--
+			--><li><a data-i18n="[html]menu.statistiques.titre" class="lien" href="https://www.insee.fr/en/statistiques" >Statistiques et études</a>
+				<div class="menu-deroulant">
+					<div data-i18n="[html]menu.statistiques.en-tete" class="menu-deroulant-en-tete">
+						Cherchez vos statistiques par&hellip;
+					</div>
+					<ul>
+						<li>
+							<a class="deroulement" href="#"></a><a data-i18n="menu.statistiques.themes" class="lien titre-categorie" href="https://www.insee.fr/en/statistiques?idfacette=1">Thèmes</a>
+							<ul>
+								<li><a data-i18n="menu.statistiques.economie" class="lien" href="https://www.insee.fr/en/statistiques?theme=27">Économie - conjoncture - comptes nationaux</a></li>
+								<li><a data-i18n="menu.statistiques.demographie" class="lien" href="https://www.insee.fr/en/statistiques?theme=0">Démographie</a></li>
+								<li><a data-i18n="menu.statistiques.entreprises" class="lien" href="https://www.insee.fr/en/statistiques?theme=37">Entreprises</a></li>
+								<li><a data-i18n="[html]menu.statistiques.plus-de-themes" class="lien plusDe" href="https://www.insee.fr/en/statistiques?idfacette=1">Plus de thèmes&hellip;</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="deroulement" href="#"></a><a data-i18n="menu.statistiques.niveau-geographique" class="lien titre-categorie" href="https://www.insee.fr/en/statistiques?idfacette=3">Niveaux géographiques</a>
+							<ul>
+								<li><a class="lien" href="https://www.insee.fr/en/statistiques?debut=0&amp;geo=FRANCE-1&amp;idfacette=3">France</a></li>
+								<li><a data-i18n="menu.statistiques.comparaisons-reg-dep" class="lien" href="https://www.insee.fr/en/statistiques?debut=0&amp;geo=COMPRD-1&amp;idfacette=3">Toutes les régions ou tous les départements</a></li>
+								<li><a data-i18n="menu.statistiques.toutes-communes" class="lien" href="https://www.insee.fr/en/statistiques?debut=0&amp;geo=TOUTES_COMMUNE-1">Toutes les communes</a></li>
+								<li><a data-i18n="[html]menu.statistiques.plus-de-niveau-geographique" class="lien plusDe" href="https://www.insee.fr/en/statistiques?idfacette=3">Plus de niveaux géographiques&hellip;</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="deroulement" href="#"></a><a data-i18n="menu.statistiques.categorie-produit" class="lien titre-categorie" href="https://www.insee.fr/en/statistiques?idfacette=4">Catégories</a>
+							<ul>
+								<li><a data-i18n="menu.statistiques.donnees" class="lien" href="https://www.insee.fr/en/statistiques?categorie=1">Données</a></li>
+								<li><a data-i18n="menu.statistiques.publications" class="lien" href="https://www.insee.fr/en/statistiques?categorie=2">Publications</a></li>
+								<li><a data-i18n="[html]menu.statistiques.plus-de-categories" class="lien plusDe" href="https://www.insee.fr/en/statistiques?idfacette=4">Plus de catégories&hellip;</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="deroulement" href="#"></a><a data-i18n="menu.statistiques.collections" class="lien titre-categorie" href="https://www.insee.fr/en/statistiques?idfacette=5">Collections</a>
+							<ul>
+								<li><a class="lien" href="https://www.insee.fr/en/statistiques?collection=116">Insee Première</a></li>
+								<li><a class="lien" href="https://www.insee.fr/en/statistiques?collection=119">Notes et points de conjoncture</a></li>
+								<li><a data-i18n="[html]menu.statistiques.plus-de-collections" class="lien plusDe" href="https://www.insee.fr/en/statistiques?idfacette=5">Plus de collections&hellip;</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</li><!--
+			--><li><a class="deroulement" href="#"></a><a class="lien" href="https://www.insee.fr/en/information/2107769">Definitions, methods and quality</a><div class="menu-deroulant"><ul><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2565539">Definitions</a><ul><li><a class="lien" href="https://www.insee.fr/en/metadonnees/definitions">Definitions</a></li></ul></li><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2526481">Data sources and indicators</a><ul><li><a class="lien" href="https://www.insee.fr/en/metadonnees/sources">List of data sources</a></li><li><a class="lien" href="https://www.insee.fr/en/metadonnees/indicateurs">List of indicators</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2517226">Documentation on census results</a></li></ul></li><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/4252443">Quality in the Official Statistical Service (SSP)</a><ul><li><a class="lien" href="https://www.insee.fr/en/information/4249987">The Reference Framework</a></li><li><a class="lien" href="https://www.insee.fr/en/information/5388742">The Third European Peer Review 2021</a></li><li><a class="lien" href="https://www.insee.fr/en/information/4250036">Governance</a></li><li><a class="lien" href="https://www.insee.fr/en/information/4250540">Skills</a></li><li><a class="lien" href="https://www.insee.fr/en/information/4250661">Quality Management Actions and Initiatives as part of a Process-Oriented Approach</a></li><li><a class="lien" href="https://www.insee.fr/en/information/4251599">European Commitments</a></li><li><a class="lien" href="https://www.insee.fr/en/information/4251104">Users’ Needs</a></li></ul></li><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107765">Classification</a><ul><li><a class="lien" href="https://www.insee.fr/en/metadonnees/nafr2/section/A">French classification of activities - NAF Rev. 2</a></li><li><a class="lien" href="https://www.insee.fr/en/metadonnees/cpfr21/section/A">French classification of products - CPF Rev. 2.1</a></li></ul></li><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/5398380">Models, Methods and Statistical Tools</a><ul><li><a class="lien" href="https://www.insee.fr/en/information/5398357">Statistical Methodology</a></li></ul></li><li><a class="lien titre-categorie" href="https://www.insee.fr/en/information/4195037">Courrier des statistiques</a><ul></ul></li></ul></div></li><li><a class="deroulement" href="#"></a><a class="lien" href="https://www.insee.fr/en/information/2107752">Services</a><div class="menu-deroulant"><ul><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107732">Review maintenance payments, rents, leases or a contract</a><ul><li><a class="lien" href="https://www.insee.fr/en/information/2489482">Review housing rent</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2489869">Review a commercial or professional lease</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2491441">Indexation of contracts</a></li></ul></li><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2512785">Retrieve indices and time series (BDM)</a><ul><li><a class="lien" href="https://www.insee.fr/en/information/2868059">Search for indices and time series</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2868055">Using the SDMX service web</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2868052">Correspondence tables</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2886952">History of news</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2852056">Technical changes in the web service SDMX</a></li></ul></li><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107734">Register or identify a company</a><ul><li><a class="lien" href="https://www.insee.fr/en/information/2107726">Company situation tools</a></li></ul></li><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2563034">Videos &amp; Educational tools</a><ul><li><a class="lien" href="https://www.insee.fr/en/information/2563032">INSEE in brief</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2903127">Videos</a></li></ul></li><li><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107749">Respond to an INSEE survey</a><ul></ul></li><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107747">Consult publication calendars</a><ul><li><a class="lien" href="https://www.insee.fr/en/information/2107811">Publication calendars</a></li></ul></li><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107743">Contributing to the Index database of natural persons (BRPP)</a><ul><li><a class="lien" href="https://www.insee.fr/en/information/2493967">Registry office data</a></li><li><a class="lien" href="https://www.insee.fr/en/information/4489573">The Single Electoral Register</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2494151">The computerisation of data exchange</a></li></ul></li><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/3288629">Alain Desrosières Insee library</a><ul><li><a class="lien" href="https://www.insee.fr/en/information/3288575">Documentary portal and open access catalogue</a></li><li><a class="lien" href="https://www.insee.fr/en/information/3288548">The Digital Library of Official Statistics</a></li><li><a class="lien" href="https://www.insee.fr/en/information/3288461">Contact the library</a></li></ul></li><li><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107745">Order a service</a><ul></ul></li><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107739">Follow us</a><ul><li><a class="lien" href="https://www.insee.fr/en/information/3711699">INSEE on social networks</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2107837">Publication alerts</a></li></ul></li><li><a class="lien titre-categorie" href="https://www.insee.fr/en/information/3313008">Contact us</a><ul></ul></li><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107814">Press</a><ul><li><a class="lien" href="https://www.insee.fr/en/information/2499106">Regional press officers</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2647680">Press releases</a></li></ul></li></ul></div></li><li><a class="deroulement" href="#"></a><a class="lien" href="https://www.insee.fr/en/information/2107711">INSEE and official statistics</a><div class="menu-deroulant"><ul><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107702">INSEE</a><ul><li><a class="lien" href="https://www.insee.fr/en/information/2381925">Getting to know INSEE</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2381922">Working at INSEE</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2381920">Seminars and conferences</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2381918">Brief history</a></li><li><a class="lien" href="https://www.insee.fr/en/information/4195175">Activity Reports</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2410087">Satisfaction surveys</a></li></ul></li><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107704">INSEE's activities</a><ul><li><a class="lien" href="https://www.insee.fr/en/information/2384705">Producing short-term diagnoses</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2384796">Providing details about the productive system</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2384815">Observation of the society</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2384952">Conducting the population census</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2384677">Describing and analysing regions and territories</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2388700">Managing registers : BRPP and Sirene</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2388407">Disseminating its statistics and studies</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2385705">Improving its methods and assessing quality</a></li><li><a class="lien" href="https://www.insee.fr/en/information/4301982">Contributing to the development of European and international statistics</a></li></ul></li><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107706">Official Statistics</a><ul><li><a class="lien" href="https://www.insee.fr/en/information/2398930">Legislative and institutional framework</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2386424">Official Statistical System</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2388575">Statistical confidentiality</a></li><li><a class="lien" href="https://www.insee.fr/en/information/4196120">Personal data protection</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2388844">Access to data</a></li><li><a class="lien" href="https://www.insee.fr/en/information/5232639">Access to administrative documents</a></li></ul></li><li><a class="deroulement" href="#"></a><a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107708">The development of European statistics</a><ul><li><a class="lien" href="https://www.insee.fr/en/information/4304373">Producers of European statistics in France</a></li><li><a class="lien" href="https://www.insee.fr/en/information/2410240">The legal basis of European statistical governance</a></li><li><a class="lien" href="https://www.insee.fr/en/information/4300318">The framework regulations and sectoral regulations</a></li></ul></li><li><a class="lien titre-categorie" href="https://www.insee.fr/en/information/5232639">Access to administrative documents</a><ul></ul></li></ul></div></li>
+		</ul>
+	</nav>
+</div>
+<div class="clear"></div>
+	</header>	
+    
+	<main id="contenu" class="main" role="main">
+		<nav class="breadcrum">
+   <div class="container">
+      <ol class="fil-ariane">
+         <li><a data-i18n="breadcrum.accueil" href="https://www.insee.fr/en/accueil">Accueil</a></li>
+         <li><a href="https://www.insee.fr/en/information/2107752">Services</a></li>
+         <li><a href="https://www.insee.fr/en/information/2512785">Retrieve indices and time series (BDM)</a></li>
+         <li>Technical changes in the web service SDMX</li>
+      </ol>
+   </div>
+</nav>
+<section>
+   <div class="titre-page publication   ">
+      <div class="titre">
+         <h1 class="titre-principal                                      "><span class="titre-titre">Technical changes in the web service SDMX</span></h1>
+         <p class="auteurs hidden-template-impression"></p>
+         <div class="chapeau">
+            <p class="paragraphe-chapeau   ">Since October 4, 2017, you can access for some series, the different versions published
+               since June 19, 2017.
+               This new functionnality keeps accessible all the values ​​taken by these series (without
+               overwriting the old values ​​when adding new points).
+            </p>
+            <p class="paragraphe-chapeau   ">You will find on this page the details of the main technical modifications since June
+               19, 2017. You can also download
+               		the correspondence table between former and new dataflows and another one for the
+               datastructures.
+            </p>
+         </div>
+      </div>
+      <div class="details hidden-template-impression">
+         <div>
+            <div class="categorie">Services</div>
+            <div class="famille-numero"></div>
+            <div class="date-diffusion hidden-impression-information-rapide"><span id="libelle-details"><span data-i18n="[html]produit.bandeau-bleu.derniere-maj">Dernière mise à jour
+                     le&nbsp;:</span></span>04/10/2017
+            </div>
+            <div class="lien-details"><a data-i18n="produit.bandeau-bleu.imprimer" href="#" class="bouton-imprimante">Imprimer</a></div>
+         </div>
+         <div class="donnees-telechargeables"></div>
+      </div>
+      <div class="auteurs hidden-impression-information-rapide impression-seulement"></div>
+      <div class="date-diffusion hidden-impression-information-rapide impression-seulement"></div>
+   </div>
+   <div class="contenu" id="contenu">
+      <div id="consulter" class="information" tabindex="0">
+         <div class="corps-publication">
+            <div class="bloc avertissement"><img class="image-avertissement" src="https://www.insee.fr/static/img/attention.svg" alt=""><div class="contenu-avertissement">
+                  <div class="bloc paragraphes ">
+                     <p class="paragraphe   ">The webservice now responds to https://bdm.insee.fr/series/sdmx/.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="bloc fichiers">
+               <div class="bloc-gauche">
+                  <div class="nom-titre"><span class="nom-fichier"></span><span class="titre-fichier">Correspondences between old and new dataflows</span></div>
+               </div><a class="fichier" href="https://www.insee.fr/en/statistiques/fichier/2852056/Correspondance_anciens_et_nouveaux_dataflows_definitif.xls">
+                  <div class="contenu-fichier">
+                     <div class="fichier-format">(xls, 46 Ko)</div>
+                     <div class="bouton-telecharger bouton-telecharger-xls bouton-telecharger-court"></div>
+                  </div></a></div>
+            <ul class="bloc liste">
+               
+               <li class="item">
+                  <a href="https://bdm.insee.fr/series/sdmx/datastructure" class="renvoi">Datastructures</a>
+                  
+               </li>
+               
+            </ul>
+            <h2 class="bloc  intertitre-impression " id="titre-bloc-4">I – Changes in the structure of the request</h2>
+            <div class="bloc paragraphes ">
+               <p class="paragraphe   ">In order to better comply with the standard SDMX, two changes will be made to the
+                  structure of the request.
+               </p>
+            </div>
+            <h3 class="bloc  " id="titre-bloc-6">Simplified access to series by their idbank or by dataflow</h3>
+            <div class="bloc paragraphes ">
+               <p class="paragraphe   ">The agency must be entered as FR1. For example, FR1,IRL must be used instead of IRL.</p>
+            </div>
+            <h3 class="bloc  " id="titre-bloc-8">Access to series by dataflow</h3>
+            <div class="bloc paragraphes ">
+               <p class="paragraphe   ">All dimensions of a dataflow must be shown and separated by “.”.</p>
+            </div>
+            <div class="bloc paragraphes ">
+               <p class="paragraphe   ">The contour of the dataflows will change. There will be no automatic redirection in
+                  order to avoid the risk of misuse of data. Access to the <a href="https://bdm.insee.fr/series/sdmx/dataflow" class="renvoi">list of dataflows</a>
+                  
+               </p>
+            </div>
+            <h3 class="bloc  " id="titre-bloc-11">Access to the history of publications</h3>
+            <div class="bloc paragraphes ">
+               <p class="paragraphe   ">The several published versions are available using the includeHistory parameter.</p>
+               <p class="paragraphe   ">A selection of the latest published versions can be done using the updatedAfter parameter.</p>
+            </div>
+            <h2 class="bloc  intertitre-impression " id="titre-bloc-13">II – Changes in the structure of the response</h2>
+            <div class="bloc paragraphes ">
+               <p class="paragraphe   ">Irrespective of the series, it will always have at least the following dimensions:</p>
+            </div>
+            <div id="Figure_a" class="bloc figure" data-id-graph-parent="">
+               <div class="onglets-clear"></div><span class="ancre sans-onglet" id="ancre-Figure_a"></span><div role="tabpanel" id="tableau-Figure_a" tabindex="0" class="panneau courant">
+                  <figure role="group" aria-labelledby="figcaption-tableau-Figure_a">
+                     <div class="tableau ">
+                        <div class="unite">
+                           					
+                        </div>
+                        <table id="produit-tableau-Figure_a" class="tableau-produit" style="">
+                           <caption> (
+                              					)
+                           </caption>
+                           <thead>
+                              <tr class="">
+                                 <th class="" scope="col">Dimension identifier</th>
+                                 <th class="" scope="col">Description</th>
+                                 <th class="" scope="col">Change</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr class="">
+                                 <th class="ligne " scope="row">FREQ</th>
+                                 <td class="texte ">frequency</td>
+                                 <td class="texte ">before dimension or&nbsp;attribute</td>
+                              </tr>
+                              <tr class="">
+                                 <th class="ligne " scope="row">REF_AREA</th>
+                                 <td class="texte ">geographic area</td>
+                                 <td class="texte ">before attribute</td>
+                              </tr>
+                              <tr class="">
+                                 <th class="ligne " scope="row">UNIT_MEASURE</th>
+                                 <td class="texte ">unit</td>
+                                 <td class="texte ">before attribute</td>
+                              </tr>
+                              <tr class="">
+                                 <th class="ligne " scope="row">NATURE</th>
+                                 <td class="texte ">type of measurement: index, variation, year-on-year</td>
+                                 <td class="texte ">could exist as&nbsp;a&nbsp;dimension</td>
+                              </tr>
+                              <tr class="">
+                                 <th class="ligne " scope="row">INDICATEUR</th>
+                                 <td class="texte ">measurement</td>
+                                 <td class="texte ">could exist as&nbsp;a&nbsp;dimension</td>
+                              </tr>
+                              <tr class="">
+                                 <th class="ligne " scope="row">CORRECTION</th>
+                                 <td class="texte ">raw, seasonal adjustment, seasonal adjustment-working days, etc.</td>
+                                 <td class="texte ">could exist as&nbsp;a&nbsp;dimension</td>
+                              </tr>
+                              <tr class="">
+                                 <th class="ligne " aria-hidden="true" scope="row"></th>
+                                 <td class="texte " aria-hidden="true"></td>
+                                 <td class="texte " aria-hidden="true"></td>
+                              </tr>
+                              <tr class="">
+                                 <th class="ligne " scope="row">
+                                    <em>TIME_PERIOD</em>
+                                    
+                                 </th>
+                                 <td class="texte ">
+                                    <em>date of observation</em>
+                                    
+                                 </td>
+                                 <td class="texte "></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </figure>
+               </div>
+            </div>
+            <ul class="bloc liste">
+               
+               <li class="item">The title of the series in English has been added to the title in French.</li>
+               
+               <li class="item">The Time dimension, for which the identifier is TIME_PERIOD, will be systematically
+                  defined in first position in the new responses DSD, whereas it is in last position
+                  in the current web service.
+               </li>
+               
+               <li class="item">The unused attribute TIME_PER_COLLECT has been deleted.</li>
+               
+            </ul>
+            <h2 class="bloc  intertitre-impression " id="titre-bloc-17">III – Changes in observations</h2>
+            <ul class="bloc liste">
+               
+               <li class="item">The following attributes have been retained and their content remains the same: OBS_STATUS
+                  and DATE_JO.
+               </li>
+               
+               <li class="item">Four attributes have been added in order to define the observations in more detail,
+                  the main modalities are already present in the attribute OBS_STATUS.
+                  				
+                  <ul class="bloc liste">
+                     
+                     <li class="item">
+                        <strong>OBS_QUAL: quality</strong>
+                        				            
+                        <ul class="bloc liste">
+                           
+                           <li class="item">E: estimate</li>
+                           
+                           <li class="item">P: provisional value</li>
+                           
+                           <li class="item">SD: semi-final value</li>
+                           
+                           <li class="item">DEF: final value </li>
+                           
+                           <li class="item">F: forecast</li>
+                           
+                        </ul>
+                        					
+                     </li>
+                     
+                     <li class="item">
+                        <strong>OBS_CONF: confidentiality</strong>
+                        
+                        <ul class="bloc liste">
+                           
+                           <li class="item">F: public value</li>
+                           
+                           <li class="item">C: confidential value</li>
+                           
+                           <li class="item">Q: covered by statistical confidentiality</li>
+                           
+                        </ul>	
+                        					
+                     </li>
+                     
+                     <li class="item">
+                        <strong>OBS_TYPE: type of value </strong>	
+                        						     
+                        <ul class="bloc liste">
+                           
+                           <li class="item">A: normal</li>
+                           
+                           <li class="item">U: atypical</li>
+                           
+                           <li class="item">O: missing</li>
+                           
+                           <li class="item">ND: not available</li>
+                           
+                           <li class="item">N: not significant</li>
+                           
+                        </ul>
+                        					
+                     </li>
+                     
+                     <li class="item">
+                        <strong>OBS_REV: revision</strong>	
+                        						     
+                        <ul class="bloc liste">
+                           
+                           <li class="item">1: revised</li>
+                           
+                        </ul>
+                        					
+                     </li>
+                     
+                  </ul>
+                  				
+               </li>
+               
+            </ul>
+            <h2 class="bloc  intertitre-impression " id="titre-bloc-19">IV – Change in the response</h2>
+            <div class="bloc paragraphes ">
+               <p class="paragraphe   ">There is no longer an English version of the error messages but the error codes remain
+                  the same.
+               </p>
+            </div>
+         </div>
+      </div>
+      <div id="documentation" class="panneau publication "></div>
+   </div>
+</section>
+<section></section>
+	</main>
+	<footer role="contentinfo">
+		
+
+
+
+
+
+
+<div class="footer-mobile">
+	<a id="afficher-menu-footer-mobile">Menu</a>
+</div>
+<div class="footer">
+	<div class="container-bloc-1">
+		<div class="bloc-1" role="navigation">
+			
+			<div class="abonnement">
+				<h2 class="titre-footer" data-i18n="footer.abonnez-vous">Abonnez-vous</h2>
+				<div class="contenu-abonnement">
+					<div class="lettre"></div>
+					<a href="https://www.insee.fr/en/information/2107837" class="lien-footer avis-parution" data-i18n="footer.avis-parution">Avis de parution</a>
+				</div>
+			</div>
+			
+			<div class="reseaux-sociaux">
+				<h2 class="titre-footer" data-i18n="footer.reseaux-sociaux">Nous suivre</h2>
+				<div class="contenu-reseaux-sociaux">
+					<div class="cercle-twitter">
+						
+							
+								<a href="https://twitter.com/InseeFr_News" data-i18n="[title]reseaux-sociaux.footer.lien-twitter" title="Twitter"><span class="icone-twitter"><span data-i18n="reseaux-sociaux.footer.lien-twitter" class="hidden-accessibilite"></span></span></a>
+							
+							
+						
+					</div>
+					<div class="cercle-linkedin">
+						<a href="https://www.linkedin.com/company/insee" data-i18n="[title]reseaux-sociaux.footer.lien-linkedin" title="LinkedIn"><span class="icone-linkedin"><span data-i18n="reseaux-sociaux.footer.lien-linkedin" class="hidden-accessibilite"></span></span></a>
+					</div>
+					<div class="cercle-youtube">
+						<a href="https://www.youtube.com/channel/UChCCvJTbZEYsCXyfu27eQ6g" data-i18n="[title]reseaux-sociaux.footer.lien-youtube" title="Youtube"><span class="icone-youtube"><span data-i18n="reseaux-sociaux.footer.lien-youtube" class="hidden-accessibilite"></span></span></a>
+					</div>
+					<div class="cercle-dailymotion">
+						<a href="https://www.dailymotion.com/InseeFr" data-i18n="[title]reseaux-sociaux.footer.lien-dailymotion" title="Dailymotion"><span class="icone-dailymotion"><span data-i18n="reseaux-sociaux.footer.lien-dailymotion" class="hidden-accessibilite"></span></span></a>
+					</div>
+					<div class="cercle-blog">
+						<a href="https://blog.insee.fr/" data-i18n="[title]reseaux-sociaux.footer.lien-blog" title="Blog"><span class="icone-blog"><span data-i18n="reseaux-sociaux.footer.lien-blog" class="hidden-accessibilite"></span></span></a>
+					</div>
+					<div class="cercle-rss">
+						<a href="https://www.insee.fr/en/information/2414678" data-i18n="[title]reseaux-sociaux.footer.lien-rss" title="Rss"><span class="icone-rss"><span data-i18n="reseaux-sociaux.footer.lien-rss" class="hidden-accessibilite"></span></span></a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="contact-aide">
+				<h2 class="titre-footer" data-i18n="footer.contact">Contact</h2>
+				<div class="contenu-contact-aide">
+					
+						
+							<a href="https://www.insee.fr/en/information/2414818" class="lien-footer" data-i18n="footer.nous-contacter">Nous contacter</a>
+						
+						
+					
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<div class="container-bloc-2">
+		<div class="bloc-2"><ul>
+   <div class="colonne-1">
+      <li class="liste-niveau-1">
+         <div class="titre-liste-niveau-1">
+            <a class="lien" href="https://www.insee.fr/en/statistiques" data-i18n="menu.statistiques.titre">Statistiques et études</a>
+         </div>
+      </li>
+      <li class="liste-niveau-1">
+         <div class="titre-liste-niveau-1">
+            <a class="lien" href="https://www.insee.fr/en/information/2107769">Definitions, methods and quality</a>
+         </div>
+         <ul>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2565539">Definitions</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2526481">Data sources and indicators</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/4252443">Quality in the Official Statistical Service (SSP)</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107765">Classification</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/5398380">Models, Methods and Statistical Tools</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/4195037">Courrier des statistiques</a>
+               </div>
+            </li>
+         </ul>
+      </li>
+   </div>
+   <div class="colonne-2">
+      <li class="liste-niveau-1">
+         <div class="titre-liste-niveau-1">
+            <a class="lien" href="https://www.insee.fr/en/information/2107752">Services</a>
+         </div>
+         <ul>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107732">Review maintenance payments, rents, leases or a contract</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2512785">Retrieve indices and time series (BDM)</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107734">Register or identify a company</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2563034">Videos &amp; Educational tools</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107749">Respond to an INSEE survey</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107747">Consult publication calendars</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107743">Contributing to the Index database of natural persons (BRPP)</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/3288629">Alain Desrosières Insee library</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107745">Order a service</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107739">Follow us</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/3313008">Contact us</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107814">Press</a>
+               </div>
+            </li>
+         </ul>
+      </li>
+      <li class="liste-niveau-1">
+         <div class="titre-liste-niveau-1">
+            <a class="lien" href="https://www.insee.fr/en/information/2107711">INSEE and official statistics</a>
+         </div>
+         <ul>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107702">INSEE</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107704">INSEE's activities</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107706">Official Statistics</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/2107708">The development of European statistics</a>
+               </div>
+            </li>
+            <li class="liste-niveau-2">
+               <div class="titre-liste-niveau-2">
+                  <a class="lien titre-categorie" href="https://www.insee.fr/en/information/5232639">Access to administrative documents</a>
+               </div>
+            </li>
+         </ul>
+      </li>
+   </div>
+</ul></div>
+	</div>
+	<div class="container-bloc-3" role="navigation">
+		<div class="bloc-3">
+			<ul class="images-footer"><li class="image-footer"><a class="lien-footer-image" href="http://ec.europa.eu/eurostat/web/european-statistical-system/overview?locale=en"><img src="https://www.insee.fr/en/image/footer/sse_en.png" alt="European Statistical System" title="Eurostat (statistical office of the European Union)"/></a></li><li class="image-footer"><a class="lien-footer-image" href="https://www.casd.eu/en/"><img src="https://www.insee.fr/en/image/footer/logo-casd-bas-page.png" alt="CASD" title="Secure access services for confidential data"/></a></li></ul>
+		</div>
+	</div>
+	<div class="container-bloc-4" role="navigation">
+		<div class="bloc-4">
+			<ul class="liens-footer"><li class="lien-footer mentions"><a href="https://www.insee.fr/en/information/2409130">Legal notice</a></li><li class="lien-footer cond-use-data"><a href="https://www.insee.fr/en/information/2409139">Conditions of redistribution</a></li><li class="lien-footer accessibilite"><a href="https://www.insee.fr/en/information/2415363">Accessibility : partially available</a></li><li class="lien-footer "><a href="https://www.insee.fr/en/plan-du-site/">Site map</a></li></ul>
+		</div>
+	</div>
+</div>
+<a href="#" class="sticky-top"><span data-i18n="footer.sticky-top.texte" class="sticky-text">Haut de page</span></a>
+	</footer>
+	
+	
+
+</body>
+
+<!-- Mirrored from www.insee.fr/en/information/2852056 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 30 Oct 2022 14:00:56 GMT -->
+</html>
+
